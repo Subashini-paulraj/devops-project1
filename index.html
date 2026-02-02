@@ -1,2 +1,89 @@
-<h1>Hello Subashini!!!</h1>
-<p>This app is deployed using DevOps pipeline</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First DevOps Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1d2671, #c33764);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 0;
+        }
+
+        .card {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px 40px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+            max-width: 450px;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            background: #00e676;
+            color: #000;
+            font-weight: bold;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        button:hover {
+            background: #1aff8c;
+            transform: scale(1.05);
+        }
+
+        .status {
+            margin-top: 15px;
+            font-size: 16px;
+            color: #ffeb3b;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>🚀 DevOps Project</h1>
+
+        <p>This is my first DevOps project → <br>
+           <strong>App is deployed successfully.</strong>
+        </p>
+
+        <p>Implement second project using <br>
+           <strong>CI/CD Pipeline.</strong>
+        </p>
+
+        <button onclick="showStatus()">Check Deployment Status</button>
+
+        <div class="status" id="status">
+            ✅ Deployment verified! CI/CD coming soon...
+        </div>
+    </div>
+
+    <script>
+        function showStatus() {
+            document.getElementById("status").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
